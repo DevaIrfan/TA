@@ -21,7 +21,7 @@ public class SudokuSolve extends JFrame implements ActionListener {
         solveButton.addActionListener(this);
         solveButton.setBackground(new Color(34, 139, 34));
         solveButton.setForeground(Color.WHITE);
-        solveButton.setFont(new Font("Time New Roman", Font.BOLD, 16));
+        solveButton.setFont(new Font("Times New Roman", Font.BOLD, 16));
         buttonPanel.add(solveButton);
 
         clearButton = new JButton("Clear Board");
@@ -179,7 +179,6 @@ public class SudokuSolve extends JFrame implements ActionListener {
     }
 
     public static void main(String[] args) {
-
         new SudokuSolve();
     }
 }
