@@ -9,6 +9,7 @@ public class SudokuSolve extends JFrame implements ActionListener {
     private JButton clearButton;
     private int[][] board;
     private JLabel nameLabel;
+    private JLabel NIMLabel;
 
     public SudokuSolve() {
         setTitle("Sudoku Solver");
@@ -55,12 +56,21 @@ public class SudokuSolve extends JFrame implements ActionListener {
 
         add(boardPanel, BorderLayout.CENTER);
 
-        nameLabel = new JLabel("Nama: Caesar Deva Irfan Putra | NIM: 21120123130062");
+        nameLabel = new JLabel("Nama: Caesar Deva Irfan Putra");
         nameLabel.setFont(new Font("Times New Roman", Font.PLAIN, 14));
         nameLabel.setForeground(Color.BLACK);
         nameLabel.setHorizontalAlignment(SwingConstants.LEFT);
         nameLabel.setBorder(BorderFactory.createEmptyBorder(10, 10, 10, 10));
         add(nameLabel, BorderLayout.SOUTH);
+
+        setVisible(true);
+
+        NIMLabel = new JLabel("NIM: 21120123130062");
+        NIMLabel.setFont(new Font("Times New Roman", Font.PLAIN, 14));
+        NIMLabel.setForeground(Color.BLACK);
+        NIMLabel.setHorizontalAlignment(SwingConstants.RIGHT);
+        NIMLabel.setBorder(BorderFactory.createEmptyBorder(10, 10, 10, 10));
+        add(NIMLabel, BorderLayout.SOUTH);
 
         setVisible(true);
     }
