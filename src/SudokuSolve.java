@@ -8,7 +8,7 @@ public class SudokuSolve extends JFrame implements ActionListener {
     private JButton solveButton;
     private JButton clearButton;
     private int[][] board;
-    private JLabel watermarkLabel;
+    private JLabel nameLabel;
 
     public SudokuSolve() {
         setTitle("Sudoku Solver");
@@ -55,12 +55,12 @@ public class SudokuSolve extends JFrame implements ActionListener {
 
         add(boardPanel, BorderLayout.CENTER);
 
-        watermarkLabel = new JLabel("Nama: Caesar Deva Irfan Putra | NIM: 21120123130062");
-        watermarkLabel.setFont(new Font("Times New Roman", Font.PLAIN, 14));
-        watermarkLabel.setForeground(Color.BLACK);
-        watermarkLabel.setHorizontalAlignment(SwingConstants.LEFT);
-        watermarkLabel.setBorder(BorderFactory.createEmptyBorder(10, 10, 10, 10));
-        add(watermarkLabel, BorderLayout.SOUTH);
+        nameLabel = new JLabel("Nama: Caesar Deva Irfan Putra | NIM: 21120123130062");
+        nameLabel.setFont(new Font("Times New Roman", Font.PLAIN, 14));
+        nameLabel.setForeground(Color.BLACK);
+        nameLabel.setHorizontalAlignment(SwingConstants.LEFT);
+        nameLabel.setBorder(BorderFactory.createEmptyBorder(10, 10, 10, 10));
+        add(nameLabel, BorderLayout.SOUTH);
 
         setVisible(true);
     }
