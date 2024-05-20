@@ -21,17 +21,17 @@ public class SudokuSolve extends JFrame implements ActionListener {
         solveButton.addActionListener(this);
         solveButton.setBackground(new Color(34, 139, 34));
         solveButton.setForeground(Color.WHITE);
-        solveButton.setFont(new Font("Arial", Font.BOLD, 16));
+        solveButton.setFont(new Font("Time New Roman", Font.BOLD, 16));
         buttonPanel.add(solveButton);
 
         clearButton = new JButton("Clear Board");
         clearButton.addActionListener(this);
         clearButton.setBackground(new Color(178, 34, 34));
         clearButton.setForeground(Color.WHITE);
-        clearButton.setFont(new Font("Arial", Font.BOLD, 16));
+        clearButton.setFont(new Font("Times New Roman", Font.BOLD, 16));
         buttonPanel.add(clearButton);
 
-        add(buttonPanel, BorderLayout.SOUTH);
+        add(buttonPanel, BorderLayout.NORTH);
 
         JPanel boardPanel = new JPanel();
         boardPanel.setLayout(new GridLayout(9, 9, 2, 2));
@@ -42,7 +42,7 @@ public class SudokuSolve extends JFrame implements ActionListener {
             for (int j = 0; j < 9; j++) {
                 sudokuBoard[i][j] = new JTextField(1);
                 sudokuBoard[i][j].setHorizontalAlignment(JTextField.CENTER);
-                sudokuBoard[i][j].setFont(new Font("Arial", Font.BOLD, 20));
+                sudokuBoard[i][j].setFont(new Font("Times New Roman", Font.BOLD, 20));
                 if ((i / 3 + j / 3) % 2 == 0) {
                     sudokuBoard[i][j].setBackground(Color.WHITE);
                 } else {
@@ -60,7 +60,7 @@ public class SudokuSolve extends JFrame implements ActionListener {
         watermarkLabel.setForeground(Color.BLACK);
         watermarkLabel.setHorizontalAlignment(SwingConstants.LEFT);
         watermarkLabel.setBorder(BorderFactory.createEmptyBorder(10, 10, 10, 10));
-        add(watermarkLabel, BorderLayout.NORTH);
+        add(watermarkLabel, BorderLayout.SOUTH);
 
         setVisible(true);
     }
