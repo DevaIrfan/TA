@@ -35,7 +35,7 @@ public class SudokuSolve extends JFrame implements ActionListener {
         clearButton.setFont(new Font("Times New Roman", Font.BOLD, 16));
         buttonPanel.add(clearButton);
 
-        randomButton = new JButton("Random Sudoku Question");
+        randomButton = new JButton("Random Equation");
         randomButton.addActionListener(this);
         randomButton.setBackground(new Color(70, 130, 180));
         randomButton.setForeground(Color.WHITE);
